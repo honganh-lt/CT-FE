@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Asap", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 1.1rem;
+}
+
+#header-nav ul li a {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #000;
+    text-decoration: none;
+}
+
+#header-nav ul li {
+    margin-left: 2.6rem;
+    position: relative;
+}
+#header-nav ul li::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    bottom: -2px;
+    height: 4px;
+    width: 70%;
+    left: 40%;
+    transform: translate(-50%);
+    background-color: #bd945f;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+#header-nav ul li:hover::after{
+    width: 70%;
+    opacity: 1;
+}
+
+#header-nav .fa-solid {
+    visibility: hidden;
+}
+
+@media (min-width: 1400px) {
+
+    .container .container-lg,
+    .container-md .container-sm,
+    .container-x,
+    .container-xxl {
+        max-width: 1380px;
+    }
+}
+
+@media (min-width: 767.98px) and (max-width: 999.98px) {
+    #header-nav ul li {
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        position: relative;
+    }
+
+    #header-nav ul {
+        display: block !important;
+    }
+
+    #header-nav .fa-solid {
+        visibility: visible;
+    }
+
+    /* 
+    body{
+        position: relative;
+    }
+    #header-menu li{
+        width: 100%;
+    }*/
+    #header-menu {
+        /*
+        position: absolute;
+        top: 20%;
+        left: 50%;*/
+        display: none;
+    }
+
+    .header-logo {
+        height: 48px;
+    }
+}
+
+/*Banner*/
+.row {
+    max-width: 100%;
+    display: flex;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.666667%;
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.cl-yellow {
+    color: #bd945f;
+}
+
+.cl-or {
+    color: #000;
+}
+.container-x {
+    margin: 0 2.5rem;
+}
+.w-100{
+    width: 100% !important;
+}
+.h-100{
+    height: 100% !important;
+}
+img{
+    vertical-align: middle;
+}
+#banner{
+    background-image: url(/CTiet/img/banner7.jpg);
+    height: 24rem;
+    background-repeat: no-repeat;
+}
+#banner .box-banner{
+    position: relative;
+    top: 6rem;
+    left: 10rem;
+    text-align: center;
+}
+#banner .cl-yellow {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 7px;
+}
+
+#banner .cl-or {
+    font-size: 2rem;
+    width: 27.7rem;
+    text-align: justify;
+    margin-left: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+#banner .click-button {
+    padding: 0.7rem 2rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 11.5rem;
+}
+#banner .click-button:hover{
+    background-color: #bd945f;
+    color: #fff;
+}
+
+/**Category*/
+/*Category*/
+#category {
+    background-color: #f3f3f3;
+    height: 76rem;
+}
+#category #list-category {
+    background-color: #fff;
+    height: 67rem;
+}
+
+.category-money{
+    display: flex;
+    position: relative;
+    top: 5rem;
+    left: 4rem;
+}
+.category-money h3{
+    font-size: 18px;
+    position: relative;
+    top: -2rem;
+}
+.category-money ul li{
+    position: relative;
+    top: -2.2rem;
+    left: -2rem;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 1rem;
+    color: #bd945f;
+}
+select#province{
+    position: relative;
+    top: 0;
+    left: 50rem;
+    text-align: right;
+    border: none;
+    background-color: #f3f3f3;
+}
+option:first-child{
+    font-size: 0;
+}
+#category h2 {
+    text-align: left;
+    font-size: 1.3rem;
+    color: #2c2e53;
+    text-transform: uppercase;
+    font-family: "Asap", sans-serif;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 4rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+}
+
+#category h2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 1.4%;
+    transform: translateY(-44%);
+    width: 6.3rem;
+    height: 0.5rem;
+    background-color: #bd945f;
+}
+/*
+#list-category .category-all{
+    color: #000;
+    padding-left: 90%;
+    position: relative;
+    top: -4.8rem;
+    right: 1.5rem;
+    z-index: 3;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}*/
+#category .img .w-100{
+    height: 12rem;
+    padding-left: -3rem;
+}
+
+.category-title {
+    font-size: 0.85rem;
+    font-family: "Asap", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0.6rem auto 0.3rem;
+    text-align: center;
+    color: #2c2e53;
+}
+
+.category-size {
+    font-size: 0.75rem;
+    margin: 0.3rem auto;
+    text-align: center;
+    color: #837f7f;
+    font-weight: 600;
+    margin-top: -0.3rem;
+}
+
+
+.category-price {
+    font-size: 0.75rem;
+    margin: 0.3rem auto;
+    text-align: center;
+    font-weight: 600;
+    margin-top: -0.5rem;
+}
+#category .img .w-100{
+    height: 12rem;
+    
+}
+
+.icon-star {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-star span,
+.icon-star .fa-star {
+    font-size: 0.85rem;
+    color: #d59808;
+    margin-top: -0.5rem;
+}
+
+.box-category>div {
+    width: 90% !important;
+    position: relative;
+    top: -3rem;
+}
+.box-category.col-3{
+    width: 24%;
+}
+
+#category #list-category{
+    position: relative;
+    top: 1rem;
+    left: 3.3rem;
+}
+#category .container {
+    position: relative;
+}
+.category-items .box-category{
+    display: inline-block;
+    padding-top: 2rem;
+}
+button.slick-prev.slick-arrow{
+    opacity: 0;
+}
+
+button.slick-next.slick-arrow{
+    opacity: 0;
+}
+ul.slick-dots{
+    position: relative;
+    top: -3rem;
+}
+ul.slick-dots li {
+    background-color: #dedddd;
+    padding: 2px 5px;
+    color: #fff;
+    height: 1.6rem;
+}
+ul.slick-dots li:hover{
+    background-color: #d59808;
+    color: #000;
+}
+
+
+/*Footer*/
+#footer{
+    background-color: #2a2a2d;
+}
+#footer .box-footer{
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#footer .footer-left{
+    width: 40%;
+}
+#footer .footer-left-top h2{
+    color: #fff;
+    font-size: 0.7rem;
+    position: relative;
+    text-transform: uppercase;
+}
+#footer .footer-left-top h2::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    height: 0.2rem;
+    width: 4rem;
+    background-color: #fff;
+    z-index: 3;
+}
+#footer .footer-left h5{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+#footer .footer-left-menu-icon li{
+    list-style: none;
+}
+#footer .footer-left-menu-icon li a{
+    text-decoration: none;
+    color: #fff;
+}
+#footer .footer-left-menu-icon li a i{
+    padding-right: 1rem;
+    font-size: 0.9rem;
+}
+#footer .footer-left-menu-icon li a span{
+    font-size: 0.8rem;
+}
+
+#footer .footer-mid{
+    width: 40%;
+    margin-left: 10rem;
+}
+#footer .footer-mid-top h2{
+    color: #fff;
+    font-size: 0.7rem;
+    position: relative;
+    text-transform: uppercase;
+}
+#footer .footer-mid-top h2::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    height: 0.2rem;
+    width: 4rem;
+    background-color: #fff;
+    z-index: 3;
+}
+#footer .footer-mid .footer-mid-menu li a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+#footer .footer-right{
+    width: 40%;
+}
+#footer .footer-right-top h2{
+    color: #fff;
+    font-size: 0.7rem;
+    position: relative;
+    text-transform: uppercase;
+}
+#footer .footer-right-top h2::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    height: 0.2rem;
+    width: 4rem;
+    background-color: #fff;
+    z-index: 3;
+}
+#footer .footer-right-icon{
+    padding-top: 0.8rem;
+}
+#footer .footer-right-icon a img{
+    padding-right: 0.4rem;
+}
+#footer .footer-right-end{
+    padding-top: 2rem;
+}
